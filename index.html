@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Guo-He Li (李国禾) — Cosmology and Astronomy. Physics undergraduate at Sichuan University, incoming Ph.D. student in Astronomy at USTC.">
+  <meta name="theme-color" content="#f8f6f1">
+  <title>Guo-He Li (李国禾) — Cosmology &amp; Astronomy</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1527'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23e5be82' stroke-width='1.5' stroke-opacity='0.7'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='25' text-anchor='middle' fill='%23f8f5ef'%3EGL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="reading-bar" id="reading-bar" aria-hidden="true"></div>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- Top Utility Ribbon -->
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="topbar-brand" href="#top">
+        <span class="monogram" aria-hidden="true">GL</span>
+        <span class="topbar-title" data-i18n="brandName">Guo-He Li</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
+        <span class="topbar-field" data-i18n="brandField">Cosmology &amp; Astronomy</span>
+      </a>
+
+      <nav class="topbar-nav" aria-label="Section navigation">
+        <a href="#about" data-nav="about" data-i18n="navAbout">§ 1 About</a>
+        <a href="#research" data-nav="research" data-i18n="navResearch">§ 2 Research</a>
+        <a href="#publications" data-nav="publications" data-i18n="navPublications">§ 3 Publications</a>
+        <a href="#recognition" data-nav="recognition" data-i18n="navRecognition">§ 4 Honors &amp; Talks</a>
+      </nav>
+
+      <div class="topbar-tools">
+        <button class="tool-btn" id="lang-toggle" type="button" aria-label="Switch language">
+          <span id="lang-label">中文</span>
+        </button>
+        <button class="tool-icon theme-button" id="theme-toggle" type="button" aria-label="Toggle color theme"
+          title="Paper / Observatory theme">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.4 14.2a8.5 8.5 0 0 1-10.6-10.6A8.6 8.6 0 1 0 20.4 14.2Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dual-Column Academic Monograph Workspace -->
+  <div class="shell monograph-layout" id="top">
+    <!-- Left Sticky Scholar Dossier -->
+    <aside class="scholar-rail" aria-label="Scholar profile">
+      <div class="dossier-card">
+        <figure class="portrait-box" id="portrait-frame">
+          <img id="portrait-img" src="assets/portrait.jpg" alt="Guo-He Li portrait"
+            onload="document.getElementById('portrait-frame').classList.add('has-photo')"
+            onerror="document.getElementById('portrait-frame').classList.remove('has-photo')">
+          <div class="portrait-art" aria-hidden="true">
+            <div class="portrait-art-inner">
+              <span class="portrait-art-kicker">Cosmology &amp; Astronomy</span>
+              <span class="portrait-art-name">Guo-He Li</span>
+              <span class="portrait-art-rule"></span>
+              <span class="portrait-art-note">Portrait Slot · 4:5</span>
+            </div>
+          </div>
+
+          <label class="photo-trigger" for="photo-preview-input"
+            title="Preview local photo or save as assets/portrait.jpg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <span data-i18n="photoAction">Add Photo</span>
+          </label>
+          <input id="photo-preview-input" type="file" accept="image/*" hidden>
+        </figure>
+
+        <div class="dossier-identity">
+          <h1 data-i18n="heroTitle">Guo-He Li</h1>
+          <p class="dossier-role" data-i18n="dossierRole">
+            Physics Undergraduate · Sichuan University<br>Incoming Ph.D. in Astronomy · USTC (2027)
+          </p>
+        </div>
+
+        <dl class="dossier-meta">
+          <div class="meta-row">
+            <dt data-i18n="metaFieldsK">Fields</dt>
+            <dd data-i18n="metaFieldsV">Cosmology &amp; Astronomy</dd>
+          </div>
+          <div class="meta-row">
+            <dt data-i18n="metaBaseK">Places</dt>
+            <dd data-i18n="metaBaseV">Chengdu → Hefei</dd>
+          </div>
+        </dl>
+
+        <div class="dossier-actions">
+          <div class="email-row">
+            <a class="dossier-btn primary" href="mailto:liguohe@stu.scu.edu.cn">liguohe@stu.scu.edu.cn</a>
+            <button class="dossier-btn copy-btn" id="copy-email-btn" type="button" data-email="liguohe@stu.scu.edu.cn"
+              data-i18n="copyBtn">Copy</button>
+          </div>
+          <a class="dossier-btn ghost" href="https://github.com/guoheli299-collab" target="_blank"
+            rel="noopener noreferrer">
+            GitHub · @guoheli299-collab ↗
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Main Academic Monograph -->
+    <main class="monograph-main">
+      <!-- Top Serene Observatory Horizon Banner -->
+      <section class="banner-section" aria-label="Academic Welcome">
+        <div class="hero-sky-banner">
+          <div class="sky-bg-layer" aria-hidden="true"></div>
+          <canvas id="starlight-canvas" class="sky-canvas" aria-hidden="true"></canvas>
+          <div class="sky-scrim" aria-hidden="true"></div>
+
+          <div class="sky-content">
+            <span class="sky-kicker" data-i18n="skyKicker">SCU PHYSICS (2023–2027) · USTC ASTRONOMY PH.D. (2027–)</span>
+            <blockquote class="sky-quote-block">
+              <p class="sky-quote" data-i18n="skyQuote">
+                “The eternal mystery of the world is its comprehensibility.”
+              </p>
+              <cite class="sky-cite" data-i18n="skyCite">— Albert Einstein, Physics and Reality (1936)</cite>
+            </blockquote>
+
+            <div class="sky-footer">
+              <div class="sky-stats">
+                <span class="sky-stat" data-i18n="statPubs">2 Published (PRD, Annals Phys.)</span>
+                <span class="sky-stat" data-i18n="statPre">2 arXiv Preprints</span>
+                <span class="sky-stat" data-i18n="statProj">2026 Nat. Innovation Leader</span>
+              </div>
+              <a class="sky-cta" href="#publications" data-i18n="skyCta">View Publications →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- § 1 About & Hobbies -->
+      <section id="about" class="chapter reveal">
+        <div class="chapter-header">
+          <span class="chapter-num">§ 1</span>
+          <h2 data-i18n="aboutTitle">About Me</h2>
+        </div>
+
+        <div class="editorial-prose">
+          <p class="lead-p" data-i18n="aboutLead">
+            Hi, I'm Guo-He Li (李国禾). I'm currently an undergraduate in the Physics Honors Program at Sichuan University
+            (graduating in 2027), and will join the Department of Astronomy at the University of Science and Technology
+            of China (USTC) as a Ph.D. student.
+          </p>
+          <p data-i18n="aboutBody1">
+            Curiosity about the universe is often both sweeping and romantic. Driven by that curiosity, and guided by
+            mentors who helped turn wonder into inquiry, I chose to root myself in cosmology and astronomy. Through the
+            generous mentorship of my advisors and collaborators, I took my first steps in early universe and extreme
+            mass ratio inspiral (EMRI) research.
+          </p>
+          <p data-i18n="aboutBody2">
+            I know I am still at the very beginning of this journey. Right now, my focus is on building solid
+            foundations in physics, reading widely, and reflecting honestly on which area of cosmology I want to devote
+            my Ph.D. years to. Living in an era shaped by both multi-messenger astronomy and rapid advances in
+            artificial intelligence, and supported by the warmth of my family and the guidance of my mentors, I hope to
+            find my own path amid the uncertainty.
+          </p>
+        </div>
+
+        <!-- Education Strip -->
+        <div class="edu-strip">
+          <div class="edu-card is-upcoming">
+            <span class="edu-time" data-i18n="eduUstcDate">2027 – Future</span>
+            <h3 data-i18n="eduUstcSchool">University of Science and Technology of China (USTC)</h3>
+            <p data-i18n="eduUstcRole">Ph.D. Student · Department of Astronomy · Hefei</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-time" data-i18n="eduScuDate">2023 – 2027</span>
+            <h3 data-i18n="eduScuSchool">Sichuan University</h3>
+            <p data-i18n="eduScuRole">B.S. in Physics (Top-Notch Honors Program) · Chengdu</p>
+          </div>
+        </div>
+
+        <!-- Beyond Equations: Hobbies -->
+        <div class="hobbies-block">
+          <h3 class="sub-heading" data-i18n="beyondTitle">Away from the Desk</h3>
+          <div class="hobby-row">
+            <div class="hobby-pill-card">
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="5.5" cy="17.5" r="3.5" />
+                  <circle cx="18.5" cy="17.5" r="3.5" />
+                  <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2" />
+                </svg>
+              </span>
+              <div>
+                <div class="hobby-title-line">
+                  <strong data-i18n="hobby1Title">Road Cycling</strong>
+                  <span class="hobby-badge" data-i18n="hobby1Stat">100 km · PB 3h 40min</span>
+                </div>
+                <p data-i18n="hobby1Desc">Looping the 100 km Chengdu Ring Greenway, with a personal best of 3h 40min.
+                </p>
+              </div>
+            </div>
+
+            <div class="hobby-pill-card">
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="m12 7 3.2 2.4-1.2 3.6h-4L8.8 9.4 12 7Z" />
+                  <path d="M12 3v4M20.5 9.5l-5.3-.1M17.3 19.3 14 13M6.7 19.3 10 13M3.5 9.5l5.3-.1" />
+                </svg>
+              </span>
+              <div>
+                <div class="hobby-title-line">
+                  <strong data-i18n="hobby2Title">Football</strong>
+                  <span class="hobby-badge" data-i18n="hobby2Stat">Weekly Pitch</span>
+                </div>
+                <p data-i18n="hobby2Desc">Playing football with friends to clear my head and keep life balanced outside
+                  research.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- § 2 Research Interests (With Dedicated Visuals & Detailed Descriptions) -->
+      <section id="research" class="chapter reveal">
+        <div class="chapter-header-split">
+          <div class="chapter-header">
+            <span class="chapter-num">§ 2</span>
+            <h2 data-i18n="researchTitle">Research Interests</h2>
+          </div>
+          <span class="overall-tag" data-i18n="broadValue">Overall Direction: Cosmology &amp; Astronomy</span>
+        </div>
+
+        <div class="research-modules">
+          <!-- Module 1: Early Universe -->
+          <article class="research-feature">
+            <div class="feature-visual">
+              <div class="feature-bg bg-early" aria-hidden="true"></div>
+              <canvas id="early-canvas" class="feature-canvas" aria-hidden="true"></canvas>
+              <div class="feature-scrim" aria-hidden="true"></div>
+              <span class="feature-fig-tag" data-i18n="res1Fig">FIG. A · COSMIC INFLATION, CMB &amp; PRIMORDIAL STRUCTURE</span>
+            </div>
+
+            <div class="feature-body">
+              <span class="stage-label" data-i18n="res1Stage">Undergraduate Research &amp; Training · Sichuan University</span>
+              <h3 data-i18n="res1Title">Early Universe</h3>
+              <p class="feature-lead" data-i18n="res1Lead">
+                During my undergraduate training, my early universe work focused on primordial black hole formation and pre-inflationary cosmology in modified gravity.
+              </p>
+              <ul class="feature-points">
+                <li data-i18n="res1Pt1">
+                  Primordial Black Hole (PBH) Formation: Studied the impact of heavy modes on primordial black hole formation (Phys. Rev. D 114, 103536, 2026).
+                </li>
+                <li data-i18n="res1Pt2">
+                  Wormholes &amp; Pre-Inflationary Epoch: Constructed axion-wormhole solutions in F(R, T) gravity, increasing the wormhole tunneling probability and addressing the insufficient inflation duration under the no-boundary proposal (Annals Phys. 492, 170573, 2026).
+                </li>
+              </ul>
+              <div class="feature-tags">
+                <span class="ftag" data-i18n="res1Tag1">Primordial Black Holes</span>
+                <span class="ftag" data-i18n="res1Tag2">Heavy Modes</span>
+                <span class="ftag" data-i18n="res1Tag3">F(R,T) Gravity &amp; Axion Wormholes</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Module 2: EMRIs & Gravitational Waves -->
+          <article class="research-feature">
+            <div class="feature-visual">
+              <div class="feature-bg bg-emri" aria-hidden="true"></div>
+              <canvas id="emri-canvas" class="feature-canvas"></canvas>
+              <div class="feature-scrim" aria-hidden="true"></div>
+              <span class="feature-fig-tag" data-i18n="res2Fig">FIG. B · PRECESSING EMRI ORBIT &amp; STRAIN h(t)</span>
+              <div class="emri-mini-controls">
+                <label class="slider-mini">
+                  <span data-i18n="sliderLabel">Eccentricity</span>
+                  <input id="emri-slider" type="range" min="15" max="85" value="46"
+                    aria-label="Adjust EMRI orbit eccentricity">
+                </label>
+                <button class="pause-mini" id="emri-pause" type="button" aria-label="Pause simulation">❚❚</button>
+              </div>
+            </div>
+
+            <div class="feature-body">
+              <span class="stage-label" data-i18n="res2Stage">Undergraduate Research &amp; Training · Sichuan
+                University</span>
+              <h3 data-i18n="res2Title">Extreme Mass Ratio Inspirals (EMRIs) &amp; Gravitational Waves</h3>
+              <p class="feature-lead" data-i18n="res2Lead">
+                Modeling relativistic two-body dynamics around supermassive black holes embedded in realistic galactic
+                dark matter environments to identify environmental imprints in gravitational waveforms.
+              </p>
+              <ul class="feature-points">
+                <li data-i18n="res2Pt1">
+                  Periodic &amp; Precessing Orbits: Studied periodic orbits and general precessing orbits around supermassive black holes in NFW, Beta, and Moore galactic dark matter halos, benchmarking against the Schwarzschild black hole (arXiv:2510.24989).
+                </li>
+                <li data-i18n="res2Pt2">
+                  Dissipative Effects &amp; Cross-Scale Studies: Incorporated dissipative effects including dynamical friction, accretion, and gravitational radiation in EMRI orbital dynamics and waveforms (arXiv:2603.02414), and lead the 2026 National Undergraduate Innovation Program on cross-scale dark matter effects from cosmology to multi-messenger observations.
+                </li>
+              </ul>
+              <div class="feature-tags">
+                <span class="ftag" data-i18n="res2Tag1">EMRI Dynamics</span>
+                <span class="ftag" data-i18n="res2Tag2">Dark Matter Halos (NFW · Beta · Moore)</span>
+                <span class="ftag" data-i18n="res2Tag3">GW Waveforms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Module 3: PhD Horizon -->
+          <article class="research-future-bar">
+            <span class="stage-label future" data-i18n="res3Stage">Upcoming Ph.D. · Department of Astronomy, USTC
+              (2027–)</span>
+            <h3 data-i18n="res3Title">Next Chapter in Cosmology (Exploring)</h3>
+            <p data-i18n="res3Desc">
+              As I prepare to begin my Ph.D. in the Department of Astronomy at USTC, I am currently thinking carefully
+              about which specific subfield of cosmology to focus on, staying curious and open across both theoretical
+              cosmology and multi-messenger observations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- § 3 Publications & Preprints -->
+      <section id="publications" class="chapter reveal">
+        <div class="chapter-header-split">
+          <div class="chapter-header">
+            <span class="chapter-num">§ 3</span>
+            <h2 data-i18n="pubTitle">Publications &amp; Preprints</h2>
+          </div>
+
+          <div class="filter-pills" role="tablist" aria-label="Filter publications">
+            <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true" data-i18n="tabAll">All
+              (4)</button>
+            <button class="filter-pill" data-filter="published" role="tab" aria-selected="false"
+              data-i18n="tabPublished">Published (2)</button>
+            <button class="filter-pill" data-filter="preprint" role="tab" aria-selected="false"
+              data-i18n="tabPreprints">Preprints (2)</button>
+          </div>
+        </div>
+
+        <div id="pub-container">
+          <!-- Rendered by main.js -->
+        </div>
+      </section>
+
+      <!-- § 4 Talks, Projects & Honors -->
+      <section id="recognition" class="chapter chapter-last reveal">
+        <div class="chapter-header">
+          <span class="chapter-num">§ 4</span>
+          <h2 data-i18n="recTitle">Talks, Projects &amp; Honors</h2>
+        </div>
+
+        <div class="ledger-group">
+          <h3 class="sub-heading" data-i18n="talksHeader">Academic Talks &amp; Seminars</h3>
+          <div class="ledger-list" id="talks-list"></div>
+        </div>
+
+        <div class="ledger-group">
+          <h3 class="sub-heading" data-i18n="honorsHeader">Honors, Scholarships &amp; Projects</h3>
+          <div class="ledger-list" id="honors-list"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Minimal Closing Footer -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© <span id="year">2026</span> Guo-He Li (李国禾) · <span data-i18n="footerNote">Cosmology &amp;
+          Astronomy</span></span>
+      <a href="#top" data-i18n="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
